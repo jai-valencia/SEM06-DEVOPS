@@ -6,7 +6,7 @@ trigger:
 variables:
   VM_IP_PUBLICA: '20.38.33.218'  # Se debe colocar la IP pública de tu máquina virtual
   IMAGE_NAME: 'myapp-nginx-s6'  # Se debe colocar el Nombre de la imagen que será descargada desde ACR
-  ACR_NAME: 'APPSEM06GRUPO12'  # Se debe colocar el Nombre de tu Azure Container Registry (ACR)
+  ACR_NAME: 'appsem06grupo12'  # Se debe colocar el Nombre de tu Azure Container Registry (ACR)
   ACR_USERNAME: 'APPSEM06GRUPO12'  # Se debe colocar el Nombre de usuario del ACR
   ACR_PASSWORD: 'aa6k4lzMaeLybxdu6XSZwoezVSFFJEgYpVUOwxXN9L+ACRBSwEhd'  # Se debe colocar la Contraseña del ACR
 
@@ -85,4 +85,5 @@ stages:
                 - script: |
                     # Mostrar la URL para acceder a Nginx
                     echo "La URL para acceder a Nginx es: http://${VM_IP_PUBLICA}/"
+
                   displayName: 'Mostrar URL de la máquina virtual'
